@@ -1,0 +1,24 @@
+<div class="contenedor">
+  <div class="contenido">
+    <div class="title">MELENDRES</div>
+    <div class="pregunta">
+      Califica la atención recibida en Melendres Auditores
+    </div>
+    <div class="star">
+      <mat-icon>star_border</mat-icon>
+      <mat-icon>star_border</mat-icon>
+      <mat-icon>star_border</mat-icon>
+      <mat-icon>star_border</mat-icon>
+      <mat-icon>star_border</mat-icon>
+    </div>
+    <div class="click" *ngIf="showLabel">
+      <label for="" (click)="showComment()">Escribe una Opinión</label>
+    </div>
+    <div class="comment" *ngIf="showCommentView">
+      <textarea matInput placeholder="Comment"> </textarea>
+    </div>
+    <div class="send">
+      <button mat-raised-button routerLink="./send">Enviar</button>
+    </div>
+  </div>
+</div>
